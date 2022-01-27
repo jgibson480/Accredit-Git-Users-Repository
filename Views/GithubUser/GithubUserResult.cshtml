@@ -1,0 +1,19 @@
+﻿@using Accredit_Git_Users_Repository.Models
+@model GithubUser
+
+@{
+    ViewBag.Title = "GithubUserResult";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>User Details</h2>
+        <br />
+        <p>@Model.name</p>
+        <p>@Model.location</p>
+        <p>@Model.avatar_url</p>
+        <div>
+        </div>
+    </div>
+</div>

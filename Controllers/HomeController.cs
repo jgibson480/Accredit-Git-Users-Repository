@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Accredit_Git_Users_Repository.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,18 +14,11 @@ namespace Accredit_Git_Users_Repository.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public JsonResult SearchUser(string githubUserName)
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+            return Json("https://api.github.com/users/robconery");
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+            
     }
 }

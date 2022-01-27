@@ -1,14 +1,14 @@
-﻿namespace Accredit_Git_Users_Repository.Model
+﻿namespace Accredit_Git_Users_Repository.Models
 {
-    public class User
+    public class GithubUser
     {
-        public string Name { get; set; }
-        public string Location { get; set; }
-        public string AvatarURL { get; set; }
+        public string name { get; set; }
+        public string location { get; set; }
+        public string avatar_url { get; set; }
     }
 
-    public class UserRepos : User
+    public class UserRepos
     {
-        public int StargazerCount { get; set; }
+        public int stargazercount { get; set; }
     }
 }
