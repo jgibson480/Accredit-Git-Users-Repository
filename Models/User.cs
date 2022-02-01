@@ -7,8 +7,10 @@
         public string avatar_url { get; set; }
     }
 
-    public class UserRepos
+    public class UserRepo
     {
-        public int stargazercount { get; set; }
+        public string name { get; set; }
+        public string description { get; set; }
+        public int stargazers_count { get; set; }
     }
 }

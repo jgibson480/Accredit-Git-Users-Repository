@@ -1,0 +1,26 @@
+﻿@using Accredit_Git_Users_Repository.Models
+@model dynamic
+
+@{
+    ViewBag.Title = "GithubUserResult";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>User Details</h2>
+        <br />
+        <p>@Model.User.name</p>
+        <p>@Model.User.location</p>
+        <p>@Model.User.avatar_url</p>
+        <div>
+            @foreach (UserRepo repo in Model.Repos)
+            {
+                <div>
+                    @repo.name
+                    <hr />
+                </div>
+            }
+        </div>
+    </div>
+</div>
